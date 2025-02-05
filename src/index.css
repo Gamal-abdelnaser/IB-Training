@@ -1,0 +1,131 @@
+@import "@fontsource/anton";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "EB Garamond", serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "EB Garamond", serif;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+}
+
+
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #ffbd59;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f39406;
+}
+
+::-webkit-scrollbar-track {
+  background: #cecdcd;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Quad";
+  src: url("/fonts/Quad-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Quad";
+  src: url("/fonts/Quad-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Playwrite AU QLD";
+  src: url("/fonts/Playwrite-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Playwrite AU QLD";
+  src: url("/fonts/Playwrite-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+.form-group {
+  @apply relative;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label,
+textarea:focus~label,
+textarea:not(:placeholder-shown)~label {
+  @apply -translate-y-[30px] scale-75 bg-[#161C24] px-2 transform duration-200;
+}
+
+label {
+  @apply transform duration-200;
+}
