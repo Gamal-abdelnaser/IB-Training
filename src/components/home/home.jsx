@@ -3,23 +3,22 @@ import TipsGols from "../golTips/goalTips"
 import Heros from "../heros/heros.jsx"
 import Coachs from "../coatches/coatchs"
 import Programs from "../programs/programs"
-import Hints from "../hints/hints"
-import Hints2 from "../hints/hints2"
-// import About from "../../about/about"
-// import ScrollTop from '../scroll/scrollTop'
 import Footer from "../footer.jsx/footer"
-import Hints3 from "../hints/hints3.jsx"
-// import ScrollProgressBar from "../scroll/scrollProgress"
+import HintSection from "../hints/reuseHint.jsx";
+import hints2 from '../../assets/programs/hints2.PNG';
+import hints3 from '../../assets/programs/hints3.PNG';
+import hints from '../../assets/programs/back.JPG';
 export default function Home() {
     return (
         <div className=" relative">
             <Main />
             <TipsGols />
             <Coachs />
-            <Hints2 />
-            <Hints3 />
+            <HintSection image={hints2} text="The best place to provide you with professional service" bgColor="#161C24" textColor="#fff" reverse={true} />
+            <HintSection image={hints3} text="Here you will transform from just an ordinary player to a professional player" hin="hints" />
             <Heros/>
-            <Hints />
+            <HintSection image={hints} text="You are in the right place to become stronger and have greater muscle mass and flexibility in your body by combining more than one sport professionally" textSize="30px" />
+            {/* <Hints /> */}
             <Programs/>
             <Footer />
             {/* <ScrollProgressBar />   */}

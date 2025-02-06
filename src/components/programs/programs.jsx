@@ -44,7 +44,7 @@ function ListTips() {
                     navigate("/training-details"); 
                   }}  
                   className="tips-items  flex flex-col justify-center  object-cover overflow-hidden items-center w-full  cursor-pointer transition-all duration-500 z-[3] font-[bold]  text-[25px] hover:shadow-[0_8px_10px_rgba(0,0,0,0.5),0_5px_5px_rgba(0,0,0,0.2)] rounded-[15px] border-[5px] border-solid border-secondary  bg-secondary ">
-                  <img className='transition-all duration-500 w-full   ' src={training.mainImage} alt="Icon" />
+                  <img className='transition-all duration-500 w-full ' loading="lazy" src={training.mainImage} alt="Icon" />
                   {/* <h1 className='text-[30px] text-[#ffffffc4] object-cover  font-extrabold py-5'>{training.name}</h1> */}
                 </div>
             </AnimatedSection>

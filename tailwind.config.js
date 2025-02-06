@@ -21,6 +21,9 @@ export const theme = {
         primary: '#ffbd59', // Custom primary color
         secondary: '#ba7105', // Custom secondary color
       },
+      backgroundImage: {
+        'dot-bg': "url('/assets/dotBg.png')",
+      },
   },
 };
 export const plugins = [
