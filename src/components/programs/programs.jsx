@@ -11,7 +11,7 @@ export default function Programs() {
     
       <div id='programs' className="bg-[#161C24] programs flex justify-center items-center flex-col text-center w-full ">
         <div className="container w-[95%] flex justify-center justify-items-center  items-center  flex-col px-0 py-[50px]">
-          <Title color='#fff'>Programs</Title>
+          <Title className="text-[#fff]" color='#fff'>Programs</Title>
             <div className="w-full mb-[50px]">
               {/* <h1 className='starter-text w-full selection:text-customSelection  mb-[50px] font-extrabold text-[60px] text-[#000] relative cursor-pointer transition-[0.3s]  py-0 rounded-[100px] uppercase before:content-["_"] before:absolute before:w-[15%] before:h-[3px] before:bg-[#633f08] before:left-[42.5%] before:bottom-[-6px] '>Our Programs</h1>  */}
             </div>

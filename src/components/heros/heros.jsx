@@ -41,9 +41,7 @@ export default function Heros() {
     <AnimatedSection>
         <div id='heros' className="imageSlider pt-[50px] w-full flex justify-center items-center m-auto pb-[100px] bg-[#161C24] ">
             <div className="container w-[90%] flex justify-center items-center flex-col">
-                {/* <div className="w-full flex items-center text-center justify-center mb-[20px]">
-                    <h1 className='starter-text selection:text-customSelection mb-[30px] font-extrabold text-[60px] text-[#000] relative cursor-pointer transition-[0.3s] py-0 rounded-[100px] uppercase before:content-["_"] before:absolute before:w-[40%] before:h-[3px] before:bg-[#633f08] before:left-[30%] before:bottom-[-6px]'>Our Heros</h1>
-                </div> */}
+                
                 <Title color='#fff' >Our Heros </Title>
 
                 {/* الكاروسيل */}

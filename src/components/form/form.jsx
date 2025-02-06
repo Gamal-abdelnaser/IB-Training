@@ -139,7 +139,7 @@ function Formy() {
   // Render error message if field is touched and invalid
   const renderErrorMessage = (fieldName) => {
     if (touched[fieldName] && !formData[fieldName]) {
-      return <div className="text-red-500 text-[20px] mt-1">{`${fieldName} is required`}</div>;
+      return <div className="text-red-500 text-[20px] text-start mt-1">{`${fieldName} is required`}</div>;
     }
     if (errors[fieldName]) {
       return <div className="text-red-500 text-[20px] mt-1">{errors[fieldName]}</div>;

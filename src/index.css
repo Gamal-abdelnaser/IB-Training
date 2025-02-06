@@ -129,3 +129,6 @@ textarea:not(:placeholder-shown)~label {
 label {
   @apply transform duration-200;
 }
+.h{
+  list-style:decimal;
+}

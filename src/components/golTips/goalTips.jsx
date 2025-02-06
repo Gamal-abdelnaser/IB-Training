@@ -1,10 +1,14 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faPen,faRoadCircleCheck,faHourglassHalf,faDumbbell } from '@fortawesome/free-solid-svg-icons';
-import iconImage1 from "../../assets/icons/write.png"
-import iconImage2 from "../../assets/icons/time.png"
-import iconImage3 from "../../assets/icons/road.png"
-import iconImage4 from "../../assets/icons/last.png"
+// import iconImage1 from "../../assets/icons/write.png"
+// import iconImage2 from "../../assets/icons/time.png"
+// import iconImage3 from "../../assets/icons/road.png"
+import iconImage4 from "../../assets/icons/goal.png"
+import iconImage1 from "../../assets/icons/contract.png"
+import iconImage2 from "../../assets/icons/plan.png"
+import iconImage3 from "../../assets/icons/deadline.png"
 import AnimatedSection from "../../Animation/AnimatedSection"
+import './golTip.css'
 export default function TipsGols() {
   
 return(
@@ -66,11 +70,11 @@ function ListTips() {
             <AnimatedSection key={index}>
             <div 
               key={index}
-              className="tips-items flex flex-col justify-center items-center w-full h-auto  cursor-pointer transition-all duration-500 z-[3] font-[bold]  text-[25px] hover:shadow-[0_8px_10px_rgba(0,0,0,0.5),0_5px_5px_rgba(0,0,0,0.2)] rounded-[15px] border-2 border-solid border-[#827b7b9f] "
+              className="tips-items py-9 flex flex-col justify-center items-center w-full h-auto  cursor-pointer transition-all duration-500 z-[3] font-[bold]  text-[25px] hover:shadow-[0_8px_10px_rgba(0,0,0,0.5),0_5px_5px_rgba(0,0,0,0.2)] rounded-[15px] border-2 border-solid border-[#827b7b9f] "
             >
               <span className="font-playwrite font-bold tracking-wider text-white text-[25px] max-md:text-[20px]  p-5 ">
                 <span className='icon flex items-center justify-center  '>
-                  <img className='transition-all duration-500 w-[30%] mb-8' src={tip.ic} alt="Icon" />
+                  <img className='image-filter transition-all duration-500 w-[30%] mb-8' src={tip.ic} alt="Icon" />
                 </span>
                 {tip.text}
               </span>

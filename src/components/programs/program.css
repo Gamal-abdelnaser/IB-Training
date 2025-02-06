@@ -2,3 +2,9 @@
     /* background-image: url("../../assets/dotBg.png"); */
 
 }
+.boxTrain1 ,.boxTrain2  {
+    background-image: url("../../assets/dotBg.png");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}

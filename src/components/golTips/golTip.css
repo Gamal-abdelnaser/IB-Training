@@ -1,0 +1,6 @@
+.tips-items {
+    background-image: url("../../assets/dotBg.png");
+}
+.image-filter {
+    filter: invert(67%) sepia(94%) saturate(356%) hue-rotate(-11deg) brightness(101%) contrast(103%);
+}

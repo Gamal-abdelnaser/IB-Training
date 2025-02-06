@@ -20,7 +20,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="developed flex md:flex-row max-sm:flex-col max-[400px]: items-center ">
+                <div className="developed flex md:flex-row max-md:flex-col max-[400px]: items-center ">
                         <div className="meni flex items-center text-center justify-items-center">
                            <Carle text="Developed By" />
                             <span className='second-letter'>
