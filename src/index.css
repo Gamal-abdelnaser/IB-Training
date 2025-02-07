@@ -35,7 +35,7 @@ a {
 }
 
 li {
-  list-style: none;
+  /* list-style: none; */
 }
 html {
   font-size: 62.5%;

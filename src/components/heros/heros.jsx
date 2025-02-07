@@ -50,7 +50,7 @@ export default function Heros() {
                               <div className="itemContainer bg-white rounded-3xl p-8 overflow-hidden shadow-2xl border-[solid] border-[#9f9e9e] border-[2px] ">
                                   <img loading="lazy" src={card.photo} alt="carousel-img" className='pointer-events-none max-w-full max-h-full object-contain rounded-[2rem]' />
                                   <div className="content items-center text-center">
-                                      <p className='text-[20px] mt-[20px] text-right font-bodoni text-[#5a5a5a] tracking-[1.5px]'>{card.store}</p>
+                                      <p className='text-[20px] mt-[20px] text-right font-anton text-[#5a5a5a] tracking-[1.5px]'>{card.store}</p>
                                       <div className='w-full h-[3px] bg-[#000] my-[10px]'></div>
                                       
                                       <h2 className='text-[20px]  text-center font-bold text-secondary mb-[5px]'>{card.program}</h2>

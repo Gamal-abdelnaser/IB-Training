@@ -1,9 +1,9 @@
 
 import { Link, useNavigate } from "react-router-dom";
+import logoImg from '../../assets/logos/1.svg'
+import ScrollProgressBar from '../scroll/scrollProgress';
 import { useState } from 'react';
 import './header.css';
-import logoImg from '../../assets/logos/1.png'
-import ScrollProgressBar from '../scroll/scrollProgress';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

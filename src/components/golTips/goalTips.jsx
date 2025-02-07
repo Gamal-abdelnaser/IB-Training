@@ -3,10 +3,10 @@
 // import iconImage1 from "../../assets/icons/write.png"
 // import iconImage2 from "../../assets/icons/time.png"
 // import iconImage3 from "../../assets/icons/road.png"
-import iconImage4 from "../../assets/icons/goal.png"
-import iconImage1 from "../../assets/icons/contract.png"
-import iconImage2 from "../../assets/icons/plan.png"
-import iconImage3 from "../../assets/icons/deadline.png"
+import iconImage4 from "../../assets/icons/goal.svg"
+import iconImage1 from "../../assets/icons/contract.svg"
+import iconImage2 from "../../assets/icons/plan.svg"
+import iconImage3 from "../../assets/icons/deadline.svg"
 import AnimatedSection from "../../Animation/AnimatedSection"
 import './golTip.css'
 export default function TipsGols() {
@@ -58,7 +58,7 @@ function ListTips() {
             >
               <span className="font-playwrite font-bold tracking-wider text-white text-[25px] max-md:text-[20px]  p-5 ">
                 <span className='icon flex items-center justify-center  '>
-                  <img className='image-filter transition-all duration-500 w-[30%] mb-8' src={tip.ic} alt="Icon" loading="lazy"/>
+                  <img className='image-filter  transition-all duration-500 w-[30%] mb-8' src={tip.ic} alt="Icon" loading="lazy"/>
                 </span>
                 {tip.text}
               </span>

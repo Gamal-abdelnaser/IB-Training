@@ -10,6 +10,7 @@ import TrainingDetails from './components/programs/TrainingDetails'
 import AdminDashboard from "./components/adminDashbord/admin";
 import Form from "./components/form/form";
 import ScrollTop from "./components/scroll/scrollTop";
+import PhoneNumberInput from "./components/about/about"
 function App() {
 
   return (
@@ -22,7 +23,7 @@ function App() {
               <Route path="/programs"  element={<Programs />}/>
               <Route path="/coatches"  element={<Coaches />}/>
               <Route path="/heros"  element={<Heros />}/>
-              {/* <Route path="/aboutUs"  element={<About />}/> */}
+              <Route path="/aboutUs"  element={<PhoneNumberInput />}/>
               <Route path="/admin"  element={<AdminDashboard />}/>
               <Route path="/form"  element={<Form />}/>
               <Route path="/training-details"  element={< TrainingDetails/>}/>

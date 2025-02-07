@@ -27,7 +27,7 @@ export default function ScrollTop() {
       {/* <ScrollProgressBar /> */}
       <div className={`fixed bottom-5 right-5 max-md:right-3 flex justify-center items-center bg-secondary rounded-full w-auto p-2 shadow-lg ${isVisible ? "block" : "hidden"}`}>
         <button
-          className={`text-black font-semibold w-[40px] max-md:w-[30px] rounded-xl transition-transform transform hover:scale-110 focus:outline-none `}
+          className={`text-black font-semibold w-[30px] max-md:w-[26px] rounded-xl transition-transform transform hover:scale-110 focus:outline-none `}
           onClick={handleClick}
         >
           <img src={UpArrow} alt="Scroll to top" className="w-full h-full" />

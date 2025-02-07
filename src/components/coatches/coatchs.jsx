@@ -1,6 +1,6 @@
 import AnimatedSection from '../../Animation/AnimatedSection'
-import coach1 from '../../assets/coaches/1.PNG'
-import coach2 from '../../assets/coaches/2.PNG'
+import coach1 from '../../assets/coaches/1.webp'
+import coach2 from '../../assets/coaches/2.webp'
 import Title from '../title/title'
 
 
