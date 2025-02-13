@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 
+
 * {
   padding: 0;
   margin: 0;
@@ -54,7 +55,47 @@ body {
 
 }
 
+.tajawal-extralight {
+  font-family: "Tajawal", serif;
+  font-weight: 200;
+  font-style: normal;
+}
 
+.tajawal-light {
+  font-family: "Tajawal", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tajawal-regular {
+  font-family: "Tajawal", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tajawal-medium {
+  font-family: "Tajawal", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tajawal-bold {
+  font-family: "Tajawal", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tajawal-extrabold {
+  font-family: "Tajawal", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tajawal-black {
+  font-family: "Tajawal", serif;
+  font-weight: 900;
+  font-style: normal;
+}
 
 ::-webkit-scrollbar {
   width: 1.3rem;
@@ -115,6 +156,15 @@ body {
   src: url("/fonts/Playwrite-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+
+@font-face {
+  font-family: "Takeaway Combo";
+  src: url("../src/assets/fonts/arabicfont/alfont_com_Takeaway-Combo.otf") format("opentype");
+  /* Use the correct path */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .form-group {
   @apply relative;
 }

@@ -4,7 +4,75 @@
 }
 .boxTrain1 ,.boxTrain2  {
     background-image: url("../../assets/dotBg.png");
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; */
+}
+
+@media (max-width: 1024px) {
+    .claistanic {
+        background-image: url("../../assets/programs/calistanicsbg.png");
+        background-repeat: no-repeat;
+        background-position: center 18px;
+        background-size: cover;
+    }
+
+    .nutration {
+        background-image: url("../../assets/programs/nutritionbg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .fatloss {
+        background-image: url("../../assets/programs/fatlossbg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .pro {
+        background-image: url("../../assets/programs/probg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .crossfit {
+        background-image: url("../../assets/programs/crossfitbg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .bodyBuilding {
+        background-image: url("../../assets/programs/bodybuildingbg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .gorilla {
+        background-image: url("../../assets/programs/gorillabg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .ramadan {
+        background-image: url("../../assets/programs/ramadan.PNG");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+}
+
+.image-filter1 {
+    filter: invert(38%) sepia(92%) saturate(813%) hue-rotate(10deg) brightness(90%) contrast(95%);
+}
+
+.image-filter2 {
+    filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(190deg) brightness(100%) contrast(90%);
+}
+
+.image-filter3 {
+    filter: invert(47%) sepia(83%) saturate(517%) hue-rotate(105deg) brightness(93%) contrast(90%);
 }

@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    .training-datails1 {
+        background-image: url("../../assets/coaches/ibrahim1.png");
+        background-repeat: no-repeat;
+        background-position: center 18px;
+        background-size:cover;
+    }
+    .training-datails2 {
+        background-image: url("../../assets/coaches/nancy1.png");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+    }
+    .training-datails3 {
+        background-image: url("../../assets/coaches/doctor1.png");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        
+    }
+}

@@ -1,0 +1,10 @@
+
+
+@media (max-width: 1028px ) {
+   .main{
+    background-image: url("../../assets/mainmain.png");
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: cover;
+    } 
+}
