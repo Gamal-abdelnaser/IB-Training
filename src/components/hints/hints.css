@@ -4,7 +4,36 @@
                 /* background-repeat: no-repeat; */
                 /* background-position: center; */
 }
-.hints   {
-    background-image: url("../../assets/dotBg.png");
 
+.hints {
+    background-image: url("../../assets/dotBg.png");
+}
+.hints3 {
+    background-image: url("../../assets/dotBg.png");
+}
+@media(max-width: 1168px) {
+
+    
+    .hints1   {
+        background-image: url("../../assets/programs/hints2.PNG");
+        background-repeat: no-repeat;
+        background-position: center 1px;
+        background-size: cover;
+        
+    }
+    .hints2   {
+        background-image: url("../../assets/programs/hints3.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    .hints3   {
+        background-image: url("../../assets/programs/back.JPG");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
 }

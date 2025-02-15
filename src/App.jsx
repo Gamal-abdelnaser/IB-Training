@@ -9,11 +9,13 @@ import { TrainingProvider } from "./components/programs/TrainingContext";
 import TrainingDetails from './components/programs/TrainingDetails'
 import AdminDashboard from "./components/adminDashbord/admin";
 import Form from "./components/form/form";
+import SuccessPage from "./components/form/suscess";
 import ScrollTop from "./components/scroll/scrollTop";
 import PhoneNumberInput from "./components/about/about"
 import CalorieCalculator from "./components/calcolator/calcolator";
 import { DarkProvider } from "./components/darkLight/darkContext";
 import { CoatchesProvider } from "./components/coatches/coatchesContext";
+import { PlansProvider } from "./components/programs/plansContext";
 import CoachesDetails from "./components/coatches/coatchesDetails";
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
         <Header />
         <TrainingProvider>
           <CoatchesProvider>
+            <PlansProvider>
             <Routes>
               <Route path="/"  element={<Home />}/>
               <Route path="/programs"  element={<Programs />}/>
@@ -32,11 +35,13 @@ function App() {
               <Route path="/aboutUs"  element={<PhoneNumberInput />}/>
               <Route path="/admin"  element={<AdminDashboard />}/>
               <Route path="/form"  element={<Form />}/>
+              <Route path="/success"  element={<SuccessPage />}/>
               <Route path="/calcolator"  element={<CalorieCalculator />}/>
               <Route path="/training-details"  element={< TrainingDetails/>}/>
               <Route path="/coatches-details"  element={< CoachesDetails/>}/>
             </Routes>
-            </CoatchesProvider>
+            </PlansProvider>
+          </CoatchesProvider>
         </TrainingProvider>
 
       </DarkProvider>

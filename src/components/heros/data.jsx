@@ -1,16 +1,15 @@
-import slide_image1 from '../../assets/heros/1.jpg'
-import slide_image2 from '../../assets/heros/2.jpg'
-import slide_image3 from '../../assets/heros/3.jpg'
-import slide_image4 from '../../assets/heros/4.jpg'
-import slide_image5 from '../../assets/heros/5.jpg'
-import slide_image6 from '../../assets/heros/6.jpg'
-import slide_image7 from '../../assets/heros/7.jpg'
-import slide_image8 from '../../assets/heros/8.jpg'
-import slide_image9 from '../../assets/heros/9.jpg'
-import slide_image10 from '../../assets/heros/10.jpg'
-import slide_image11 from '../../assets/heros/11.jpg'
-import slide_image12 from '../../assets/heros/12.jpg'
-import slide_image13 from '../../assets/heros/13.jpg'
+import slide_image1 from '../../assets/heros/1.png';
+import slide_image2 from '../../assets/heros/3.png';
+import slide_image3 from '../../assets/heros/5.png';
+import slide_image4 from '../../assets/heros/6.png';
+import slide_image5 from '../../assets/heros/4.png';
+import slide_image6 from '../../assets/heros/10.png';
+import slide_image7 from '../../assets/heros/12.png';
+import slide_image8 from '../../assets/heros/7.png';
+import slide_image10 from '../../assets/heros/10.jpg';
+import slide_image11 from '../../assets/heros/11.png';
+import slide_image12 from '../../assets/heros/2.png';
+import slide_image13 from '../../assets/heros/13.jpg';
 
 export const slideImages = [
   {
@@ -68,13 +67,6 @@ export const slideImages = [
     program: 'Fat Loss / Calisthenics / Nutrition',
     result: 'فرق بين الصورتين ١١ كيلو',
     store: 'بدأ هدفها هو خسارة الوزن، ولكن مع الوقت تحولت إلى لاعبة كاليستنكس محترفة، وحققت نتائج مذهلة بفضل التمرين الجاد'
-  },
-  {
-    photo: slide_image9,
-    name: 'علي',
-    program: 'Calisthenics/ Nutrition',
-    result: 'خلال٣ شهور حقق هدفه',
-    store: '٢٥ سنة، كان محتاج يحسن صحته في المطلق وكمان نمط حياته، وخلال٣ شهور حقق هدفه ومعاه شكل الجسم اللي عاوزه'
   },
   {
     photo: slide_image10,

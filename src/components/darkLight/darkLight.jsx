@@ -1,41 +1,44 @@
 // ThemeToggle.jsx
-import  { useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { FaSun, FaMoon } from "react-icons/fa"; // Icons for light and dark mode
 import { DarkContext } from "./darkContext";
 
 const ThemeToggle = () => {
-  
-  // State to manage the theme
-  const { isDark , setIsDark } = useContext(DarkContext);
+  const { isDark, setIsDark } = useContext(DarkContext);
 
-  // Function to toggle the theme
+  // Toggle Theme Function
   const toggleTheme = () => {
     setIsDark((prevMode) => !prevMode);
+    localStorage.setItem("theme", !isDark ? "dark" : "light");
   };
-
-  // Effect to apply the theme and save it to localStorage
-  useEffect(() => {
-    if (isDark) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  }, [isDark]);
 
   // Check localStorage for saved theme preference on initial load
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDark(true);
+    if (savedTheme) {
+      setIsDark(savedTheme === "dark");
     }
-  }, []);
+  }, [setIsDark]);
 
   return (
     <button
       onClick={toggleTheme}
-      className={`p-2 rounded-full text-gray-800 transition-all duration-300`}
+      className="p-2 rounded-full transition-all duration-500 relative w-10 h-10 flex items-center justify-center"
     >
-      {isDark ? <FaMoon className="text-[18px] sm:text-[20px] md:text-[16px] lg:text-[19px] "/> :  <FaSun className="text-[18px] sm:text-[20px] md:text-[16px] lg:text-[19px] "  /> }
+      <div className="relative w-full h-full">
+        {/* Moon Icon (Dark Mode) */}
+        <FaMoon
+          className={`absolute inset-0 transition-all duration-500 transform ${
+            isDark ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-0 rotate-180"
+          } text-[20px] text-gray-800`}
+        />
+        {/* Sun Icon (Light Mode) */}
+        <FaSun
+          className={`absolute inset-0 transition-all duration-500 transform ${
+            isDark ? "opacity-0 scale-0 rotate-180" : "opacity-100 scale-100 rotate-0"
+          } text-[20px] text-primary`}
+        />
+      </div>
     </button>
   );
 };

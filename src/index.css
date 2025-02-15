@@ -1,9 +1,9 @@
-@import "@fontsource/anton";
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import "@fontsource/anton";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 
 * {
@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
+  font-family: 'ABeeZee', sans-serif;
 }
 
 .tajawal-extralight {
@@ -163,6 +163,21 @@ body {
   /* Use the correct path */
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABeeZee';
+  src: url('/fonts/ABeeZee-Regular.ttf') format('truetype'),
+    url('/fonts/ABeeZee-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABeeZee';
+  src: url('/fonts/ABeeZee-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
 
 .form-group {

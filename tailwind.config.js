@@ -17,6 +17,7 @@ export const theme = {
         anton: ["Anton", "sans-serif"],
         takeaway: ["Takeaway Combo", "cursive"],
         tajawal: ['Tajawal', 'serif'],
+        abeezee: ['ABeeZee', 'sans-serif'],
       },
       boxShadow: {
         'text': '20px 20px 20px rgba(0, 0, 0, 0.4)',  // Adjust the shadow as needed

@@ -28,7 +28,7 @@ return(
         </div>
 
          {/* Footer Text */}
-        <h1 className='end-text font-extrabold  font-quad text-[25px] text-white cursor-pointer transition-[0.3s] mt-[100px] mb-[50px] px-[30px] py-5 rounded-[100px]'>Finally, and surprisingly, you can get all of that in <span className="uppercase text-[30px] bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-futura relative selection:text-black">IB Training</span></h1>
+        <h1 className='end-text font-extrabold  font-futura text-[25px] text-white cursor-pointer transition-[0.3s] mt-[100px] mb-[50px] px-[30px] py-5 rounded-[100px]'>Finally, and surprisingly, you can get all of that in <span className="uppercase text-[30px] bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-futura relative selection:text-black">IB Training</span></h1>
 
       </div>
       

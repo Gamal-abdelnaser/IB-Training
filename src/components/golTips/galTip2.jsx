@@ -1,9 +1,12 @@
 
+import { useContext } from "react";
 import iconImage1 from "../../assets/icons/contract.svg";
 import iconImage2 from "../../assets/icons/video-call.svg";
 import iconImage3 from "../../assets/icons/whatsapp.svg";
+import { DarkContext } from "../darkLight/darkContext.jsx"
 import "./golTip.css"
 function TipsGols2() {
+        const { isDark } = useContext(DarkContext);
 
   const infoBoxes = [
     {   
@@ -38,10 +41,10 @@ function TipsGols2() {
   ];
 
   return (
-    <div className="tips h-auto flex  justify-center items-center flex-col text-center w-full selection:text-customSelection py-[100px] px-4 sm:px-6 lg:px-8">
+    <div className={`tips h-auto flex  justify-center items-center flex-col text-center w-full selection:text-customSelection py-[100px] px-4  border-t-[1px] border-[#cccaca] sm:px-6 lg:px-8 ${isDark ? "bg-PrimaryBg" : "bg-white" }`}>
       <div className="max-w-[90%] mx-auto">
         <h1 
-          className='starter-text font-anton  w-full font-bold text-[40px] max-sm:text-[25px] text-black selection: cursor-pointer transition-[0.3s] pb-[100px] py-0 leading-[50px] tracking-wide '>
+          className={`starter-text font-anton  w-full font-bold text-[40px] max-sm:text-[25px] ${isDark ? "text-white" : "text-black" }  selection: cursor-pointer transition-[0.3s] pb-[100px] py-0 leading-[50px] tracking-wide `}>
             Subscription Steps 
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 justify-center ">

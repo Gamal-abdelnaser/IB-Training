@@ -11,14 +11,14 @@ export default function Coachs() {
   const { isDark } = useContext(DarkContext);
   return (
     <AnimatedSection >
-    <div id='coatches' className={`coachs flex justify-center items-center flex-col text-center w-full ${ isDark ? 'bg-PrimaryBg' : 'bg-white'}  `}>
+    <div id='coatches' className={`coachs flex justify-center items-center flex-col text-center w-full bg-PrimaryBg border-t-[1px] border-[#cccaca] `}>
       <div className="container w-[95%] flex justify-center justify-items-center  items-center  flex-col px-0 py-[50px]">
         
         {/* Section Title */}
-        <Title color={`${ isDark ? '#fff' : '#000'}`}>Our team</Title>
+        <Title color={`#fff`}>Our team</Title>
 
         {/* Coach Cards */}
-        <div className="box-container  justify-items-center grid  items-center w-full grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-[20px] px-[50px] py-0 justify-center">    
+        <div className="box-container  justify-items-center grid  items-center w-full xl:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-[20px] px-[50px] py-0 justify-center">    
           <ListTips />
         </div>
       </div>
@@ -45,7 +45,7 @@ function ListTips() {
                 setSelectedCoatch(trainer); 
                 navigate("/coatches-details"); 
               }}  
-              className="tips-items flex flex-col justify-center object-cover overflow-hidden items-center w-full  cursor-pointer transition-all duration-500 hover:scale-105 z-[3] font-[bold]  text-[25px] hover:shadow-[0_8px_10px_rgba(0,0,0,0.5),0_5px_5px_rgba(0,0,0,0.2)] rounded-[15px] border-[2px] border-solid border-[#ababab] bg-secondary ">
+              className="tips-items flex flex-col justify-center object-cover overflow-hidden items-center w-full  cursor-pointer transition-all duration-500 hover:scale-105 z-[3] font-[bold]  text-[25px] hover:shadow-[0_8px_10px_rgba(0,0,0,0.5),0_5px_5px_rgba(0,0,0,0.2)] rounded-[15px] border-[2px] border-solid border-secondary bg-secondary ">
               <img className='transition-all duration-500 w-full ' loading="lazy" src={trainer.photo2} alt="Icon" />
               {/* <h1 className='text-[30px] text-[#ffffffc4] object-cover  font-extrabold py-5'>{traine.name}</h1> */}
             </div>

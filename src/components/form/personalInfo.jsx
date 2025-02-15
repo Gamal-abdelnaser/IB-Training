@@ -14,14 +14,13 @@ const PersonalInfo = ({
   handlePromoCode,
   discountApplied,
   previewUrl,
+  promoError
 }) => {
   return (
     <div>
       <h2 className="text-[30px] text-white font-bold mb-6">Personal Information</h2>
       <div className="space-y-6 flex flex-col gap-[20px]">
         
-
-
         <FullNameInput 
           handleBlur={handleBlur}
           formData={formData}
@@ -37,7 +36,7 @@ const PersonalInfo = ({
           errors={errors}
         />
 
-        <PackageSelection />
+        {/* <PackageSelection /> */}
         
         <PromoCodeContent 
           formData={formData}
@@ -45,11 +44,14 @@ const PersonalInfo = ({
           touched={touched}
           errors={errors}
           handlePromoCode={handlePromoCode}
+          discountApplied={discountApplied}
+          promoError={promoError}
         />
 
-        {discountApplied && (
-            <div className="text-green-600 mt-1 text-[20px]">20% discount applied!</div>
+        { discountApplied && (       
+          <div className="text-green-600 mt-1 text-[20px]">20% discount applied!</div> 
         )}
+        {promoError && <div className="text-red-500 mt-1 text-[18px]">{promoError}</div>} 
 
         {formData.paymentMethod && (
           <ChoosePaymentMethod 
@@ -107,40 +109,7 @@ function PhoneNumberInput({formData, handleChange ,touched, errors , handleBlur}
   )
 }
 
-function PackageSelection() {
-  return(
-    <>
-      <div className="content w-full items-center justify-center  flex  flex-col lg:flex-row  md:flex-col sm:flex-col ">
-        <SelectedInputs  text='Control' />
-
-        <SelectedInputs  text='Control+' />
-        <SelectedInputs  text='Med Control+' />
-        <SelectedInputs  text='Vip Control' />
-      </div>
-      {/* <div className="content w-full  flex  flex-col lg:flex-row  md:flex-col sm:flex-col ">
-
-      </div> */}
-    </>
-  )
-}
-
-function SelectedInputs({text}) {
-  const { isDark } = useContext(DarkContext);
-  return (
-    <label className={`inline-flex mb-4 items-center text-center   w-[100%] xl:w-[20%] lg:w-[25%] md:w-[100%] sm:w-[100%] `}>
-      <input
-        type="radio"
-        name="package"
-        // value=
-        // onChange={}
-        className="form-radio mr-2"
-      />
-      <span className={`ml-[1px] text-[20px] font-anton max-sm:text-[14px] font-light text-[#dbd9d9] `}> {text}</span>
-    </label>
-  )
-}
-
-function PromoCodeContent({formData, handleChange ,touched, errors , handlePromoCode}) {
+function PromoCodeContent({formData, handleChange ,touched, errors , handlePromoCode , discountApplied }) {
   return (
     <div className="relative">
           <input
@@ -161,13 +130,15 @@ function PromoCodeContent({formData, handleChange ,touched, errors , handlePromo
           <button
             type="button"
             onClick={handlePromoCode}
-            className="absolute h-3/4 w-[15%] right-4 top-1/2 text-[18px] max-md:text-[10px] transform -translate-y-1/2 bg-orange-500 text-white px-4 rounded-lg hover:bg-orange-600"
+            disabled={discountApplied} // Disable after applying
+            className={`absolute h-3/4 w-[15%] right-4 top-1/2 text-[18px] max-md:text-[10px] transform -translate-y-1/2 bg-orange-500 text-white px-4 rounded-lg hover:bg-orange-600  py-2  ${discountApplied ? "opacity-50 cursor-not-allowed" : ""}`}
           >
-            Apply
+            {discountApplied ? "Applied" : "Apply"}
           </button>
         </div>
   )
 }
+
 
 function ChoosePaymentMethod({formData,handleFileChange,previewUrl,touched}) {
   return(
